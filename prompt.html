@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проверка логина</title>
+</head>
+<body>
+   <script>
+       "use strict"
+
+       let userName = prompt('Кто там?', '');
+       let password;
+
+       if (userName == '' || userName == null) {
+           alert('Отменено');
+       } else if (userName == 'Админ') {
+            password = prompt('Пароль?', '');
+            
+            if (password == '' || password == null) {
+                alert('Отменено');
+            } else if (password == 'Я Главный') {
+                alert('Здравствуйте!');
+            } else {
+                alert('Неверный пароль');
+            }
+       } else {
+           alert('Я вас не знаю');
+       }
+
+       
+
+
+      
+   </script> 
+</body>
+</html>18
